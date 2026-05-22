@@ -1,4 +1,4 @@
-import { ReactTyped } from 'react-typed';
+import { ReactTyped } from "react-typed";
 
 const Hero = () => {
   return (
@@ -8,9 +8,14 @@ const Hero = () => {
         Grow with data.
       </h1>
       <h2 className="text-white font-bold sm:text-4xl text-2xl">
-        Fast, flexible financing for{' '}
+        Fast, flexible financing for{" "}
         <span>
-          <ReactTyped strings={['B2B', 'SaaS', 'D2C']} loop typeSpeed={40} backSpeed={50} />
+          <ReactTyped
+            strings={["B2B", "SaaS", "D2C"]}
+            loop
+            typeSpeed={40}
+            backSpeed={50}
+          />
         </span>
       </h2>
       <p className="sm:text-lg text-md my-1 text-gray-600 font-bold py-1">
@@ -22,6 +27,6 @@ const Hero = () => {
       </button>
     </div>
   );
-}
+};
 
-export default Hero
+export default Hero;

@@ -1,6 +1,9 @@
 const Email = () => {
   return (
-    <div id="newsletter" className="sm:px-[150px] p-8 bg-black flex flex-col sm:flex-row w-full text-white justify-between">
+    <div
+      id="newsletter"
+      className="sm:px-[150px] p-8 bg-black flex flex-col sm:flex-row w-full text-white justify-between"
+    >
       <div>
         <h4 className="text-3xl font-bold my-2">
           Want tips & tricks to optimize your flow?
@@ -29,6 +32,6 @@ const Email = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Email
+export default Email;

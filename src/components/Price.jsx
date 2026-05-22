@@ -1,6 +1,14 @@
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
-const Price = ({img, name, price, storage, usersAllowed, sendLimit, cardClassName = 'bg-white'}) => {
+const Price = ({
+  img,
+  name,
+  price,
+  storage,
+  usersAllowed,
+  sendLimit,
+  cardClassName = "bg-white",
+}) => {
   return (
     <div
       className={`sm:shadow-xl flex flex-col pt-7 items-center rounded-lg py-8 hover:scale-105 transition-all ${cardClassName}`}
@@ -23,7 +31,7 @@ const Price = ({img, name, price, storage, usersAllowed, sendLimit, cardClassNam
       </button>
     </div>
   );
-}
+};
 
 Price.propTypes = {
   img: PropTypes.string.isRequired,
@@ -33,6 +41,6 @@ Price.propTypes = {
   usersAllowed: PropTypes.string.isRequired,
   sendLimit: PropTypes.string.isRequired,
   cardClassName: PropTypes.string,
-}
+};
 
-export default Price
+export default Price;

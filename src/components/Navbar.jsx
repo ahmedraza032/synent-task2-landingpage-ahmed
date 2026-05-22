@@ -1,14 +1,13 @@
-import { useState } from 'react'
-import { CiMenuBurger } from "react-icons/ci"
+import { useState } from "react";
+import { CiMenuBurger } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
 
 const Navbar = () => {
-
   const [isClicked, setIsClicked] = useState(false);
-  
+
   const handleClick = () => {
     setIsClicked(!isClicked);
-  }
+  };
 
   return (
     <div
@@ -58,6 +57,6 @@ const Navbar = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
