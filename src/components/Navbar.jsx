@@ -1,14 +1,13 @@
-import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { CiMenuBurger } from "react-icons/ci"
 import { RxCross1 } from "react-icons/rx";
 
 const Navbar = () => {
 
-  const [isClicked, setisClicked] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
   
   const handleClick = () => {
-    setisClicked(!isClicked);
+    setIsClicked(!isClicked);
   }
 
   return (
@@ -23,13 +22,13 @@ const Navbar = () => {
       )}
       <ul className="hidden sm:flex justify-between gap-4 items-center">
         <li>
-          <a href="">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li>
-          <a href="">Account</a>
+          <a href="#pricing">Account</a>
         </li>
         <li>
-          <a href="">Sign In</a>
+          <a href="#newsletter">Sign In</a>
         </li>
         <li>
           <button className="bg-white text-black px-4 py-2 rounded-md">
@@ -44,16 +43,16 @@ const Navbar = () => {
       >
         <ul className="flex flex-col gap-3">
           <li>
-            <a href="">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="">Account</a>
+            <a href="#pricing">Account</a>
           </li>
           <li>
-            <a href="">Sign In</a>
+            <a href="#newsletter">Sign In</a>
           </li>
           <li>
-            <a href=""> Get Started</a>
+            <a href="#hero">Get Started</a>
           </li>
         </ul>
       </div>

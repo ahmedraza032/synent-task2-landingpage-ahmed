@@ -1,4 +1,3 @@
-import React from 'react'
 import { CiFacebook, CiInstagram, CiTwitter } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa6";
 
@@ -22,63 +21,63 @@ const Footer = () => {
       <div className="flex flex-col sm:flex-row justify-between sm:w-[75%]">
         <div className="flex flex-col gap-3 my-3">
           <p className="text-gray-400">Solutions</p>
-          <a href="#" className="text-white">
+          <a href="#features" className="text-white">
             Analytics
           </a>
-          <a href="#" className="text-white">
+          <a href="#features" className="text-white">
             Marketing
           </a>
-          <a href="#" className="text-white">
+          <a href="#pricing" className="text-white">
             Commerce
           </a>
-          <a href="#" className="text-white">
+          <a href="#newsletter" className="text-white">
             Insights
           </a>
         </div>
 
         <div className="flex flex-col gap-3 my-3">
           <p className="text-gray-400">Support</p>
-          <a href="#" className="text-white">
+          <a href="#pricing" className="text-white">
             Pricing
           </a>
-          <a href="#" className="text-white">
+          <a href="#features" className="text-white">
             Documentation
           </a>
-          <a href="#" className="text-white">
+          <a href="#newsletter" className="text-white">
             Guides
           </a>
-          <a href="#" className="text-white">
+          <a href="#home" className="text-white">
             API Status
           </a>
         </div>
 
         <div className="flex flex-col gap-3 my-3">
           <p className="text-gray-400">Company</p>
-          <a href="#" className="text-white">
+          <a href="#home" className="text-white">
             About
           </a>
-          <a href="#" className="text-white">
+          <a href="#features" className="text-white">
             Blog
           </a>
-          <a href="#" className="text-white">
+          <a href="#pricing" className="text-white">
             Jobs
           </a>
-          <a href="#" className="text-white">
+          <a href="#newsletter" className="text-white">
             Press
           </a>
-          <a href="#" className="text-white">
+          <a href="#home" className="text-white">
             Partners
           </a>
         </div>
         <div className="flex flex-col gap-3 my-3">
           <p className="text-gray-400">Legal</p>
-          <a href="#" className="text-white">
+          <a href="#home" className="text-white">
             Claim
           </a>
-          <a href="#" className="text-white">
+          <a href="#newsletter" className="text-white">
             Privacy Policy
           </a>
-          <a href="#" className="text-white">
+          <a href="#features" className="text-white">
             Terms & Conditions
           </a>
         </div>
