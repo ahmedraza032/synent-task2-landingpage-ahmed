@@ -1,9 +1,9 @@
-import React from 'react'
+import PropTypes from 'prop-types'
 
-const Price = ({img, name, price, storage, usersAllowed, sendLimit, bgColor}) => {
+const Price = ({img, name, price, storage, usersAllowed, sendLimit, cardClassName = 'bg-white'}) => {
   return (
     <div
-      className={`sm:shadow-xl flex flex-col  pt-7 items-center rounded-lg py-8 hover:scale-105 transition-all bg-${bgColor}`}
+      className={`sm:shadow-xl flex flex-col pt-7 items-center rounded-lg py-8 hover:scale-105 transition-all ${cardClassName}`}
     >
       <img src={img} className="w-[27%]" />
       <p className="m-3 text-2xl font-bold">{name}</p>
@@ -23,6 +23,16 @@ const Price = ({img, name, price, storage, usersAllowed, sendLimit, bgColor}) =>
       </button>
     </div>
   );
+}
+
+Price.propTypes = {
+  img: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  storage: PropTypes.string.isRequired,
+  usersAllowed: PropTypes.string.isRequired,
+  sendLimit: PropTypes.string.isRequired,
+  cardClassName: PropTypes.string,
 }
 
 export default Price

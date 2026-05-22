@@ -1,4 +1,3 @@
-import React from 'react'
 import Price from '../components/Price'
 import Single from '../assets/single.png'
 import Double from '../assets/double.png'
@@ -6,7 +5,7 @@ import Triple from '../assets/triple.png'
 
 const Pricing = () => {
   return (
-    <div className="bg-white w-full grid grid-cols-1 sm:grid-cols-3 sm:px-[150px] p-24 gap-10">
+    <div id="pricing" className="bg-white w-full grid grid-cols-1 sm:grid-cols-3 sm:px-[150px] p-24 gap-10">
       <Price
         img={Single}
         name="Single User"
@@ -22,7 +21,7 @@ const Pricing = () => {
         storage="500 GB Storage"
         usersAllowed="1 User Allowed"
         sendLimit="Send up to 2 GB"
-        bgColor='gray-300'
+        cardClassName="bg-gray-300"
       />
       <Price
         img={Triple}
