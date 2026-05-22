@@ -1,10 +1,9 @@
-import React from 'react'
 import Laptop from '../assets/laptop.jpg'
 
 const CTA = () => {
   return (
-    <div className="sm:px-[150px] p-8 bg-white w-full flex flex-col items-center sm:flex-row">
-      <img src={Laptop} className="my-2 sm:w-[50%]" />
+    <div id="features" className="sm:px-[150px] p-8 bg-white w-full flex flex-col items-center sm:flex-row">
+      <img src={Laptop} alt="Analytics dashboard on a laptop" className="my-2 sm:w-[50%]" />
       <div>
         <p className="text-green-500 font-bold ">DATA ANALYTICS DASHBOARD</p>
         <h3 className="text-4xl font-bold my-2">
